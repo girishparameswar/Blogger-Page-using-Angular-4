@@ -1,0 +1,18 @@
+.container {
+    width: 90%
+}
+
+#index {
+    float: right; 
+}
+
+#comBtn{
+    position: relative;
+    right: 5%;
+}
+
+h3{
+    text-align: center;
+    color: cornflowerblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

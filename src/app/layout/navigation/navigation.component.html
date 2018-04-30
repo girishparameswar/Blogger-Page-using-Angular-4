@@ -1,0 +1,24 @@
+<div class="navbar navbar-default">
+    <p class="Header" *ngIf="toggleNav()">BloggerPage</p>
+  <ul class="nav navbar-nav">
+    <li>
+      <a href="#" *ngIf="toggleNav()" [routerLink]='["/home"]'>Home</a>
+    </li>
+    <li>
+      <a href="#" *ngIf="!toggleNav()" [routerLink]='["/signin"]'>Login</a>
+    </li>
+    <li>
+      <a href="#" *ngIf="!toggleNav()" [routerLink]='["/register"]'>Sign Up</a>
+    </li>
+    <li>
+      <a href="#" *ngIf="toggleNav()" [routerLink]='["/lists"]'>Lists</a>
+    </li>
+    <li>
+      <a href="#" *ngIf="toggleNav()" [routerLink]='["/create"]'>Create Post</a>
+    </li>
+    <li>
+      <a href="#" *ngIf="toggleNav()" [routerLink]='["/logout"]'>Logout</a>
+    </li>
+       
+  </ul>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+    <h3>{{error}}</h3>
+  <div class="panel panel-info" id="post_id" *ngFor="let post of posts; let i=index" [attr.data-index]="i">
+    <div class="panel panel-heading">
+    <label style="font-size:25px">{{post.createdBy}}</label><br/>
+    <span class="date sub-text">Posted On: {{post.Time}}</span>
+    </div>
+    <div class="panel panel-body">
+        <ul><label>Title: </label>{{post.postTitle}}</ul>
+        <ul><label>Description: </label>{{post.description}}</ul>
+       <ul>
+          <button id="comBtn" class="btn btn-success" (click)="comment()">Comment</button>
+          <button id=index class="glyphicon glyphicon-thumbs-up btn btn-primary" (click)="countlike(post)"> Like
+            <span class="badge badge-light">{{tempCount[i].likes}}</span>
+          </button>
+          <app-view [user]="post"></app-view>
+        </ul>
+    <div class="panel panel-footer">
+      <app-comment [toggleVal]='toggleVal' [user]="post"></app-comment>
+    </div>
+</div>
+</div>

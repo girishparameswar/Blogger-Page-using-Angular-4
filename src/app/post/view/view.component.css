@@ -1,0 +1,27 @@
+.backdrop{
+    background-color:rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100vh;
+}
+
+.modal-header{
+    background-color: seagreen;
+    font-size: 20px;
+}
+
+.container{
+    width: 1%;
+    position: relative;
+    right:11%;
+}
+
+#open {
+    width:125px;
+}
+
+h4{
+    text-align: center;
+}
